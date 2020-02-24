@@ -18,6 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Utils
+$(call inherit-product, $(LOCAL_PATH)/utils.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 
