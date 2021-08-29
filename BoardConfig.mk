@@ -21,7 +21,7 @@ include vendor/xiaomi/violet/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
+TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a55
 
@@ -89,7 +89,7 @@ LOC_HIDL_VERSION := 4.0
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
+DEVICE_MANIFEST_FILE += hardware/qcom/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/hidl/manifest-qva.xml
 
